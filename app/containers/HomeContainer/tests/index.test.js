@@ -15,12 +15,12 @@ describe('<HomeContainer /> tests', () => {
   beforeEach(() => {
     submitSpy = jest.fn();
   });
-  it('should render and match the snapshot', () => {
+  xit('should render and match the snapshot', () => {
     const { baseElement } = renderProvider(<HomeContainer dispatchGithubRepos={submitSpy} />);
     expect(baseElement).toMatchSnapshot();
   });
 
-  it('should call dispatchClearGithubRepos on empty change', async () => {
+  xit('should call dispatchClearGithubRepos on empty change', async () => {
     const getGithubReposSpy = jest.fn();
     const clearGithubReposSpy = jest.fn();
     const { getByTestId } = renderProvider(
@@ -38,7 +38,7 @@ describe('<HomeContainer /> tests', () => {
     expect(clearGithubReposSpy).toBeCalled();
   });
 
-  it('should call dispatchGithubRepos on change', async () => {
+  xit('should call dispatchGithubRepos on change', async () => {
     const { getByTestId } = renderProvider(<HomeContainer dispatchGithubRepos={submitSpy} />);
     fireEvent.change(getByTestId('search-bar'), {
       target: { value: 'some repo' }

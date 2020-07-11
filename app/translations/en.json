@@ -7,5 +7,11 @@
   "matching_repos": "Total number of matching repos: {totalCount}",
   "something_went_wrong": "Sorry. Something went wrong! Please try again in sometime.",
   "stories": "Go to Storybook",
-  "wednesday_solutions": "Wednesday Solutions"
+  "wednesday_solutions": "Wednesday Solutions",
+  "song_list": "Song List",
+  "song_search": "Song Search",
+  "song_search_default": "Search for a song by entering it's name in the search box",
+  "get_song_details": "Get details of Songs",
+  "search_song_query": "Search query: {songName}",
+  "matching_songs": "Total number of matching songs: {resultCount}"
 }

@@ -1,11 +1,11 @@
 import NotFound from '@containers/NotFoundPage/Loadable';
-import HomeContainer from '@containers/HomeContainer/Loadable';
+// import HomeContainer from '@containers/HomeContainer/Loadable';
+import SongsContainer from '@containers/SongsContainer/Loadable';
 
 export const routeConfig = {
   repos: {
-    component: HomeContainer,
+    component: SongsContainer,
     route: '/',
-    // add props to pass to HomeContainer
     props: {
       maxwidth: 500,
       padding: 20
